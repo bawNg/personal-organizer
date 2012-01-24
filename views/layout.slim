@@ -1,0 +1,24 @@
+html
+  head
+    title Personal Organizer
+    script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"
+    script type="text/javascript" src="/coffee-script.js"
+    script type="text/coffeescript" src="/coffeescripts/script.coffee"
+    link rel="stylesheet" href="/stylesheets/blueprint/reset.css" type="text/css"
+    link rel="stylesheet" href="/stylesheets/blueprint/grid.css" type="text/css"
+    link rel="stylesheet" type="text/css" href="/stylesheets/application.css"
+    = content_for(:head)
+
+  body
+    #container.container
+      == partial :menu
+
+      .span-42.last
+        /#flash_error= flash[:error]
+        /#flash_notice= flash[:notice]
+
+      .span-42.last ==yield
+      p
+        #status
+      .span-42.last
+        #footer Best viewed at 1152x768 or a higher resolution.

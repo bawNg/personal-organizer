@@ -1,0 +1,13 @@
+- items = %w[ home ]
+
+.span-36
+  h2 Personal Organizer
+.span-6.last
+  #menu
+    ul
+      - items.each do |item|
+        - path = '/' + (item != 'home' ? item.gsub(' ', '_') : '')
+        li
+          a href=path class=('current' if request.path_info == path or (path != '/' and request.path_info.starts_with? path)) = item.titleize
+
+br
