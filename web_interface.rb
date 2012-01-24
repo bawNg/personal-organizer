@@ -1,5 +1,5 @@
 require "sinatra/reloader"
-#require 'rack-flash'
+require_relative 'lib/rack/flash'
 require_relative 'helpers/sinatra'
 
 class WebInterface < Sinatra::Base
@@ -10,7 +10,7 @@ class WebInterface < Sinatra::Base
 
   use Rack::Session::Cookie, :secret => 'p3rs0n410rg4n123r'
   use Rack::MethodOverride
-  #use Rack::Flash
+  use Rack::Flash
 
   set :root, File.dirname(__FILE__)
 

@@ -13,7 +13,6 @@ gem 'thin'
 gem 'sinatra'
 gem 'sinatra-reloader'
 gem "async_sinatra"
-#gem 'rack-flash'
 gem 'htmlentities'
 gem 'rdiscount'
 gem 'slim'
