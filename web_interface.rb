@@ -2,6 +2,8 @@ require "sinatra/reloader"
 require_relative 'lib/rack/flash'
 require_relative 'helpers/sinatra'
 
+Slim::Engine.set_default_options :sections => true
+
 class WebInterface < Sinatra::Base
   register Sinatra::Reloader
   register Sinatra::Async
