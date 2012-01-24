@@ -5,6 +5,8 @@ require 'pp'
 
 require_relative 'web_interface'
 
+MongoMapper.database = "personal_organizer"
+
 EM.run do
   Thin::Server.new('0.0.0.0', 8080) do
     use Rack::CommonLogger
