@@ -6,8 +6,7 @@ html
     script type='text/javascript' src='/fullcalendar.min.js'
     script type="text/javascript" src="/coffee-script.js"
     script type="text/coffeescript" src="/coffeescripts/script.coffee"
-    link rel="stylesheet" href="/stylesheets/blueprint/reset.css" type="text/css"
-    link rel="stylesheet" href="/stylesheets/blueprint/grid.css" type="text/css"
+    link rel='stylesheet' type='text/css' href='/stylesheets/reset.css'
     link rel='stylesheet' type='text/css' href='/stylesheets/cupertino/theme.css'
     link rel='stylesheet' type='text/css' href='/stylesheets/fullcalendar/fullcalendar.css'
     link rel='stylesheet' type='text/css' href='/stylesheets/fullcalendar/fullcalendar.print.css' media='print'
@@ -15,15 +14,15 @@ html
     = content_for(:head)
 
   body
+    == partial :menu
     #container.container
-      == partial :menu
 
-      .span-42.last
+      .span
         #flash_error= flash[:error]
         #flash_notice= flash[:notice]
 
-      .span-42.last ==yield
+      .span ==yield
       p
         #status
-      .span-42.last
-        #footer Best viewed at 1152x768 or a higher resolution.
+      .span
+        #footer &copy; 2012
