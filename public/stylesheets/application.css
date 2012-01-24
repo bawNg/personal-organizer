@@ -240,22 +240,9 @@ a {
   display: inline-block;
 }
 
-.time-until-update {
-  font-size: 0.7em;
-}
-
-.suspended-time {
-  font-size: 0.8em;
-}
-
 .warning {
   color: orange;
 }
-
-#bet-amount {
-  width: 40px;
-}
-
 
 .tooltip {
   position: relative;
@@ -272,7 +259,7 @@ a {
   border: 1px solid #2BB0D7;
 }
 
-/*.classic { background: #FFFFAA; border: 1px solid #FFAD33; }*/
-/*.critical { background: #FFCCAA; border: 1px solid #FF3334; }*/
-/*.info { background: #9FDAEE; border: 1px solid #2BB0D7; }*/
-/*.warning { background: #FFFFAA; border: 1px solid #FFAD33; }*/
+#calendar {
+    width: 1024px;
+    margin: 0 auto;
+}

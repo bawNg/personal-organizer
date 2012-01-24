@@ -3,6 +3,7 @@ class Task
 
   key :name,        String  # event name
   key :description, String  # extended info
-  key :time,        Time    # event time
-  key :length,      Integer # in seconds
+  key :starts_at,   Time    # event time
+  key :length,      Integer # length in seconds
+  key :due_at,      Time    # or due time
 end
