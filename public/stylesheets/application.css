@@ -4,42 +4,6 @@ body {
     background-color: #F4F9FB;
 }
 
-table {
-    border-collapse: collapse;
-    /*width: 50%;*/
-    margin: 6px;
-    font-size: 0.8em;
-}
-th {
-    background: #3e83c9;
-    color: #fff;
-    font-weight: bold;
-    padding: 2px 11px;
-    text-align: left;
-    border-right: 1px solid #fff;
-    line-height: 1.2;
-}
-td {
-    padding: 6px 11px;
-    border-bottom: 1px solid #95bce2;
-    vertical-align: top;
-}
-td {
-    padding: 6px 11px;
-}
-tr.alt td {
-    background: #ecf6fc;
-}
-tr.over td, tr:hover td {
-    background: #bcd4ec;
-}
-tr.positive {
-    background: #99ff99;
-}
-tr.negative {
-    background: #ffcccc;
-}
-
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0px;
@@ -52,14 +16,11 @@ h3 {
   font-weight: bold;
 }
 
-
-
 a img {
   border: none;
 }
 
 a {
-  /*color: #0000FF;*/
   color: #C9645A;
 }
 
@@ -90,7 +51,6 @@ a {
   margin: 10px auto 0;
   max-width: 960px;
 }
-
 
 #header {
   margin-bottom: 30px;
@@ -162,98 +122,4 @@ a {
   background-color: #6495ed;
   border: 1px solid #4D84EA;
   color: #f5f5f5;
-}
-/** Sinatra error message */
-
-.fieldWithErrors {
-  display: inline;
-}
-
-#errorExplanation {
-  width: 400px;
-  border: 2px solid #CF0000;
-  padding: 0px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
-
-#errorExplanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: 0;
-  background-color: #c00;
-  color: #fff;
-}
-
-#errorExplanation p {
-  color: #333;
-  margin-bottom: 0;
-  padding: 8px;
-}
-
-#errorExplanation ul {
-  margin: 2px 24px;
-}
-
-#errorExplanation ul li {
-  font-size: 12px;
-  list-style: disc;
-}
-
-#status {
-  font-size: 0.75em;
-}
-
-.highlight {
-  background-color: yellow;
-}
-
-.highlight-red {
-  background-color: #f08080;
-}
-
-.small {
- font-size: 0.75em;
-}
-
-.tiny {
- font-size: 0.7em;
-}
-
-.update-button {
-  padding: 5px;
-  display: inline-block;
-}
-
-.update-button:hover {
-  cursor: pointer;
-}
-
-.update-image {
-  width: 15px;
-  height: 20px;
-  background: url('update-button.png') no-repeat;
-  display: inline-block;
-}
-
-.warning {
-  color: orange;
-}
-
-.tooltip {
-  position: relative;
-  display: none;
-  font-family: Calibri, Tahoma, Geneva, sans-serif;
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  border-radius: 5px 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-  background: #9FDAEE;
-  border: 1px solid #2BB0D7;
 }
