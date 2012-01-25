@@ -1,4 +1,4 @@
-- items = %w[ home ]
+- items = %w[ home logout ]
 
 #header
   #header-core
@@ -9,6 +9,4 @@
           - path = '/' + (item != 'home' ? item.gsub(' ', '_') : '')
           li
             a href=path class=('current' if request.path_info == path or (path != '/' and request.path_info.starts_with? path)) = item.titleize
-          li
-            a href=path test
     .clear
